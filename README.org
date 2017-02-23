@@ -20,11 +20,11 @@ Finally, generate the PDF file:
 
 The [[#result][result]] is shown below. Have fun!
 
-** [related]: Related Projects
+** Related Projects
 
 - ~gpg-key2ps~ from the [[https://packages.debian.org/sid/signing-party][signing-party]]
 
-** [internals]: Internals
+** Internals
 
 The short command ~sh fingerprint.tex~ works because the LaTeX code is
 written in a special way, so
@@ -35,7 +35,7 @@ forget to provide the ~--shell-escape~ option, otherwise the LaTeX file
 isn't allowed to run ~GPG~ to retrieve your key fingerprint:
 : pdflatex --shell-escape fingerprint.tex
 
-** [result]: Result
+** Result
 
 [[file:example.pdf][file:example.png]]
 
