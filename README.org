@@ -10,10 +10,10 @@ First, download the LaTeX code which is public domain:
 Then, adjust the key ID so it will print your own key rather than mine.
 Also adjust the number of repetitions to fill the page:
 : % Key ID to print
-: \newcommand{\keyid}{<b>5F8990AF</b>}
+: \newcommand{\keyid}{5F8990AF}
 : 
 : % Number of repetitions
-: \newcommand{\repetitions}{<b>8</b>}
+: \newcommand{\repetitions}{8}
 
 Finally, generate the PDF file:
 : sh fingerprint.tex
