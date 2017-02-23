@@ -44,7 +44,7 @@ pdflatex --shell-escape fingerprint.tex
 
 ## [result]: Result
 
-![example output](example.png)
+[![example output](example.png)](example.pdf)
 
 (In case you want to know, the preview image was generated with
 [GraphicsMagick](http://www.graphicsmagick.org/):
