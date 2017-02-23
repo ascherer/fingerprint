@@ -2,7 +2,7 @@
 
 Print your GPG key fingerprint with LaTeX, and be better prepared for
 [ad hoc signings](http://keysigning.org/methods/adhoc) at the next
-[[key signing party](https://en.wikipedia.org/wiki/Key_signing_party)!
+[key signing party](https://en.wikipedia.org/wiki/Key_signing_party)!
 
 First, download the LaTeX code which is public domain:
 [fingerprint.tex](fingerprint.tex)
