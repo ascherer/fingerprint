@@ -9,23 +9,20 @@ First, download the LaTeX code which is public domain:
 
 Then, adjust the key ID so it will print your own key rather than mine.
 Also adjust the number of repetitions to fill the page:
-#+BEGIN_EXCERPT
-% Key ID to print
-\newcommand{\keyid}{<b>5F8990AF</b>}
-
-% Number of repetitions
-\newcommand{\repetitions}{<b>8</b>}
-#+END_EXCERPT
+: % Key ID to print
+: \newcommand{\keyid}{<b>5F8990AF</b>}
+: 
+: % Number of repetitions
+: \newcommand{\repetitions}{<b>8</b>}
 
 Finally, generate the PDF file:
 : sh fingerprint.tex
 
-The [result](#result) is shown below. Have fun!
+The [[#result][result]] is shown below. Have fun!
 
 ** [related]: Related Projects
 
-- ~gpg-key2ps~ from the
-[[https://packages.debian.org/sid/signing-party][signing-party]]
+- ~gpg-key2ps~ from the [[https://packages.debian.org/sid/signing-party][signing-party]]
 
 ** [internals]: Internals
 
