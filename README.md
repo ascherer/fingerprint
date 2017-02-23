@@ -1,11 +1,11 @@
 # Print Your GPG Fingerprint
 
 Print your GPG key fingerprint with LaTeX, and be better prepared for
-[[http://keysigning.org/methods/adhoc][ad hoc signings]] at the next
-[[https://en.wikipedia.org/wiki/Key_signing_party][key signing party]]!
+[ad hoc signings](http://keysigning.org/methods/adhoc) at the next
+[[key signing party](https://en.wikipedia.org/wiki/Key_signing_party)!
 
 First, download the LaTeX code which is public domain:
-[[fingerprint.tex][fingerprint.tex]]
+[fingerprint.tex](fingerprint.tex)
 
 Then, adjust the key ID so it will print your own key rather than mine.
 Also adjust the number of repetitions to fill the page:
@@ -22,18 +22,18 @@ Finally, generate the PDF file:
 sh fingerprint.tex
 ```
 
-The [[#result][result]] is shown below. Have fun!
+The [result](#result) is shown below. Have fun!
 
 ## [related]: Related Projects
 
 * `gpg-key2ps` from the
-[[https://packages.debian.org/sid/signing-party][signing-party]]
+[signing-party](https://packages.debian.org/sid/signing-party)
 
 ## [internals]: Internals
 
 The short command `sh fingerprint.tex` works because the LaTeX code is
 written in a special way, so
-[[http://www.profv.de/literate-programming/][it is also a working shell script]]
+[it is also a working shell script](http://www.profv.de/literate-programming/)
 which executes `pdflatex` and removes all temporary files.
 Of course, you can also call `pdflatex` by hand. In that case, don't
 forget to provide the `--shell-escape` option, otherwise the LaTeX file
@@ -47,7 +47,7 @@ pdflatex --shell-escape fingerprint.tex
 ![example output](example.png)
 
 (In case you want to know, the preview image was generated with
-[[http://www.graphicsmagick.org/][GraphicsMagick]]:
+[GraphicsMagick](http://www.graphicsmagick.org/):
 `gm convert -density 60 example.pdf example.png`)
 
-See [[https://vog.github.io/fingerprint/][project homepage]] for more details.
+See [project homepage](https://vog.github.io/fingerprint/) for more details.
