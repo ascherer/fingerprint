@@ -5,10 +5,12 @@ Print your GPG key fingerprint with LaTeX, and be better prepared for
 [key signing party](https://en.wikipedia.org/wiki/Key_signing_party)!
 
 First, download the LaTeX code which is public domain:
-[fingerprint.tex](fingerprint.tex)
+
+* [fingerprint.tex](fingerprint.tex)
 
 Then, adjust the key ID so it will print your own key rather than mine.
 Also adjust the number of repetitions to fill the page:
+
 ```
 % Key ID to print
 \newcommand{\keyid}{5F8990AF}
@@ -18,6 +20,7 @@ Also adjust the number of repetitions to fill the page:
 ```
 
 Finally, generate the PDF file:
+
 ```
 sh fingerprint.tex
 ```
@@ -48,5 +51,3 @@ pdflatex --shell-escape fingerprint.tex
 (In case you want to know, the preview image was generated with
 [GraphicsMagick](http://www.graphicsmagick.org/):
 `gm convert -density 60 example.pdf example.png`)
-
-See [project homepage](https://vog.github.io/fingerprint/) for more details.
